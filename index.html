@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <script>
+        var arrays = [10, 8, 12, 36];
+        //doubled arrays 
+        var doubles = arrays.map(function(x){
+            return x*2;
+        });
+        //filteration applied
+        var filtered = doubles.filter(function(filt){
+            return filt>20;
+        });
+        //array to find sum
+        var total = filtered.reduce(function(sum , value){
+            return sum+value;
+        });
+
+        //printing array
+        console.log(doubles);
+        console.log(filtered);
+        console.log(total);
+    </script>
+</body>
+</html>
